@@ -12,7 +12,8 @@ app.get("/", function (req, res) {
 });
 
 app.get("/index", (req, res) => {
-    res.render("index");
+    const listaPokemon = ["Numero: ", "Nome: ", "Tipo: ", "Imagem: ", "Descrição", "Altura: ", "Peso: ", "Categoria: ", "Habilidade: "];
+    res.render("index", {tituloPg: `Pokedex Pokemon`, lista1: listaPokemon});
   });
 
 app.listen(port, () =>
