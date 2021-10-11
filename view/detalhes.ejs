@@ -1,56 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">    
-    <title>DETALHES</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">    
+        <title>DETALHES</title>
+    </head>
+    <body>
+        <section class="fundo">
 
-
-    <header class="tpdt" id="topoDetal">
-        <h1 class="dTil" id="dTl">Detalhes...</h1>
-
-        <a class="detalIni" id="dIn" href="/">Inicio</a>
+            <section >
+                <div>
+    
+                    <header>
+                         <h1>Detalhes...</h1>        
+                    </header>
+                </div>
+    
+            </section>    
         
-        <a class="detalcad" id="dCad" href="cadastro">Cadastro</a>
-        
-
-
-    </header>
-    <main>
-        
-        <section>
-            <%pokedex.forEach(item => { %>
-                <section id="pkmd">
-                    
-                    
-                    <ul id="itemNomed">
-                        <li>Numero: <%= item.numero %></li>
-                        <li>Nome:  <%= item.nome %> </li>
-                        <li>Tipo: <%= item.tipo %> </li>
-                        <li>Descrição: <%= item.descricao %></li>
-                        <li>Altura: <%= item.altura %></li>
-                        <li>Peso: <%= item.peso %></li>
-                        <li>Categoria: <%= item.categoria %></li>
-                        <li>Habilidade: <%= item.habilidade %></li>
-                    </ul>
-                    <ul id="itemImagemd">
-                        <li>
-                           <img src= "<%= item.imagem %>" />
+            <section class="btIndex">
+                <a class="bI1" href="/">Inicio</a>
+                
+                <a class="bI2" href="cadastro">Cadastro</a>
+            </section>
+            
+            <section>
+                <%pokedex.forEach(item => { %>
+                    <section id="pkm">
                         
-                        </li>
-                    </ul>
-                    
-                    
-                </section>    
-           <% }) %>
-        </section>   
-    </main>
-
-   
+                        
+                        <ul id="itemNome">
+                            <hr>
+                            <li>Numero: <%= item.numero %></li>
+                            <li>Nome:  <%= item.nome %> </li>
+                            <li>Tipo: <%= item.tipo %> </li>
+                            <li>Descrição: <%= item.descricao %></li>
+                            <li>Altura: <%= item.altura %></li>
+                            <li>Peso: <%= item.peso %></li>
+                            <li>Categoria: <%= item.categoria %></li>
+                            <li>Habilidade: <%= item.habilidade %></li>
+                            
+                        </ul>
+                        <ul id="itemImagem">
+                            <li>
+                               <img src= "<%= item.imagem %>" />
+                            
+                            </li>
+                        </ul>
+                        
+                        
+                    </section>    
+               <% }) %>
+            </section>   
+        </section>
+    
 
     </body>
+    <footer>
+       <p>
+           Todos Direitos Reservados
+       </p>
+        
+    </footer>
 </html>
