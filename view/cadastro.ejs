@@ -9,66 +9,82 @@
   <title>CADASTRO </title>
 </head>
 
-<body id="BodyCad">
-  <header class="topo">      
-    <h1 class="tcad" id="tc">CADASTRO POKEMON</h1>
-      <a class="detal" id="cadIni" href="/">Inicio</a>
-
-      <a class="ini" id="cadDet" href="detalhes">Detalhes</a>
+<body >
+  <section class="fundo">
+    <section>
+      <div>
+        <header>      
+          <h1 >CADASTRO POKEMON</h1>
+          
+        </header>
+        
+        
+      </div>
       
-  </header>
-  <form action="/new" method="POST">
-    <section>
-      <label for="numero">Número</label>
-      <input type="number" name="numero" id="numero" placeholder="Informe o número do Pokemon" required>
     </section>
 
     <section>
-      <label for="nome">Nome</label>
-      <input type="text" name="nome" id="nome" placeholder="Informe o nome do Pokemon" required>
+      <a href="/">Inicio</a>
+  
+      <a href="detalhes">Detalhes</a>
+      
     </section>
 
-    <section>
-      <label for="tipo">Tipo</label>
-      <input type="text" name="tipo" id="tipo" placeholder="Informe o tipo do Pokemon" required>
-    </section>
+    <section class="formulario">
 
-    <section>
-      <label for="imagem">Imagem</label>
-      <input type="text" name="imagem" id="imagem" placeholder="Insira a url da imagem do Pokemon">
-    </section>
-
-    <section>
-      <label for="descricao">Descrição</label>
-      <input type="text" name="descricao" id="descricao" placeholder="Informe a descricao">
-    </section>
-
-    <section>
-      <label for="altura">Altura</label>
-      <input type="number" name="altura" id="altura" 
-        placeholder="Informe o nome do Pokemon">
-    </section>
-
-    <section>
-      <label for="peso">Peso</label>
-      <input type="number" name="peso" id="peso" placeholder="Informe o peso">
-    </section>
+      <form action="/new" method="POST">
+        <section>
+          <label for="numero">Número</label>
+          <input type="number" name="numero" id="numero" placeholder="Informe o número do Pokemon" required>
+        </section>
     
-    <section>
-      <label for="categoria">Categoria</label>
-      <input type="text" name="categoria" id="categoria" placeholder="Informe a categoria">
+        <section>
+          <label for="nome">Nome</label>
+          <input type="text" name="nome" id="nome" placeholder="Informe o nome do Pokemon" required>
+        </section>
+    
+        <section>
+          <label for="tipo">Tipo</label>
+          <input type="text" name="tipo" id="tipo" placeholder="Informe o tipo do Pokemon" required>
+        </section>
+    
+        <section>
+          <label for="imagem">Imagem</label>
+          <input type="text" name="imagem" id="imagem" placeholder="Insira a url da imagem do Pokemon">
+        </section>
+    
+        <section>
+          <label for="descricao">Descrição</label>
+          <input type="text" name="descricao" id="descricao" placeholder="Informe a descricao">
+        </section>
+    
+        <section>
+          <label for="altura">Altura</label>
+          <input type="number" name="altura" id="altura" 
+            placeholder="Informe o nome do Pokemon">
+        </section>
+    
+        <section>
+          <label for="peso">Peso</label>
+          <input type="number" name="peso" id="peso" placeholder="Informe o peso">
+        </section>
+        
+        <section>
+          <label for="categoria">Categoria</label>
+          <input type="text" name="categoria" id="categoria" placeholder="Informe a categoria">
+        </section>
+    
+        <section>
+          <label for="habilidade">Habilidade</label>
+          <input type="text" name="habilidade" id="habilidade" placeholder="Informe a habilidade">
+        </section>
+    
+        <button type="submit">Cadastrar</button>
+      </form>
+  
     </section>
-
-    <section>
-      <label for="habilidade">Habilidade</label>
-      <input type="text" name="habilidade" id="habilidade" placeholder="Informe a habilidade">
     </section>
-
-    <button type="submit">Cadastrar</button>
-  </form>
+  
 </body>
-
-<footer id="rod">
-</footer>
 
 </html>

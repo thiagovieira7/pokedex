@@ -84,12 +84,10 @@ li {
 }
 body{
     display: flex;
-        
     width:100%;
     height: 100%;
     justify-content: center;
-    
-
+  
 }
 
 section.fundo{
@@ -119,7 +117,12 @@ hr{
     margin:10px 2px 25px 1px;
 }
 
-footer{
+.formulario{
     display: flex;
-    
+    width:100%;
+    height: 100%;
+    justify-content: center;
+    flex-direction:column;    
+    text-decoration: none;    
+    padding: 5px;
 }
