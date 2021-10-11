@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>POKEDEX</title>
+</head>
+<body>
+    <section id="fundoIndex">
+        <div>
+            <header> 
+                <h1>POKEDEX POKEMON</h1>
+        
+            </header>
+        </div>
+
+        
+        <section class="btIndex">
+            <a class="bI1" href="cadastro">cadastro</a>
+            
+            <a class="bI2" href="detalhes">detalhes</a>
+    
+        </section>
+    
+        <section>
+            <%pokedex.forEach(item => { %>
+                <section id="pkm">
+                    
+                    
+                    <ul id="itemNome">
+                        <li>Nome:  <%= item.nome %> </li>
+                        <li>Tipo: <%= item.tipo %> </li>
+                    </ul>
+                    <ul id="itemImagem">
+                        <li>
+                           <img src= "<%= item.imagem %>" />
+                        
+                        </li>
+                    </ul>
+                    
+                    
+                </section>    
+           <% }) %>
+       </section>   
+    </section>
+    
+</body>
+<footer>
+    <script src="/js/script.js"></script>
+</footer>
+</html>
