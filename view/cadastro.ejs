@@ -1,90 +1,95 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/style.css">
-  <title>CADASTRO </title>
-</head>
-
-<body >
-  <section class="fundo">
-    <section>
-      <div>
-        <header>      
-          <h1 >CADASTRO POKEMON</h1>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>CADASTRO </title>
+  </head>
+  
+  <body >
+    
+    <section class="fundo">
+      <section>
+        <div>
+          <header>      
+            <h1 >CADASTRO POKEMON</h1>
+            
+          </header>
           
-        </header>
+          
+        </div>
         
+      </section>
+  
+      <section class="btIndex">
+        <a href="/">Inicio</a>
+    
+        <a href="detalhes">Detalhes</a>
         
-      </div>
+      </section>
+  
+      <section id="formulario">
+  
+        <form action="/new" method="POST">
+          <section class="formInterno"> 
+            <label for="numero">Número</label>
+            <input class= "cx" type="number" name="numero" placeholder="Informe o número do Pokemon" required>
+          </section>
       
-    </section>
-
-    <section class="btIndex">
-      <a href="/">Inicio</a>
-  
-      <a href="detalhes">Detalhes</a>
+          <section class="formInterno">
+            <label for="nome">Nome</label>
+            <input class= "cx"  type="text" name="nome" placeholder="Informe o nome do Pokemon" required>
+          </section>
       
-    </section>
-
-    <section class="formulario">
-
-      <form action="/new" method="POST">
-        <section>
-          <label for="numero">Número</label>
-          <input type="number" name="numero" id="numero" placeholder="Informe o número do Pokemon" required>
-        </section>
+          <section class="formInterno">
+            <label for="tipo">Tipo</label>
+            <input class= "cx"  type="text" name="tipo"  placeholder="Informe o tipo do Pokemon" required>
+          </section>
+      
+          <section class="formInterno">
+            <label for="imagem">Imagem</label>
+            <input class= "cx"  type="text" name="imagem"  placeholder="Insira a url da imagem do Pokemon">
+          </section>
+      
+          <section class="formInterno">
+            <label for="descricao">Descrição</label>
+            <input class= "cx"  type="text" name="descricao"  placeholder="Informe a descricao">
+          </section>
+      
+          <section class="formInterno">
+            <label for="altura">Altura</label>
+            <input class= "cx"  type="number" name="altura"  
+              placeholder="Informe o nome do Pokemon">
+          </section>
+      
+          <section class="formInterno">
+            <label for="peso">Peso</label>
+            <input class= "cx"  type="number" name="peso"  placeholder="Informe o peso">
+          </section>
+          
+          <section class="formInterno">
+            <label for="categoria">Categoria</label>
+            <input  class= "cx"  type="text" name="categoria"  placeholder="Informe a categoria">
+          </section>
+      
+          <section class="formInterno">
+            <label for="habilidade">Habilidade</label>
+            <input  class= "cx"  type="text" name="habilidade"  placeholder="Informe a habilidade">
+          </section>
+  
+          <section class="btIndex">
+            
+            <button class="bI1 type="submit">Cadastrar</button>
+          </section>
+        </form>
     
-        <section>
-          <label for="nome">Nome</label>
-          <input type="text" name="nome" id="nome" placeholder="Informe o nome do Pokemon" required>
-        </section>
-    
-        <section>
-          <label for="tipo">Tipo</label>
-          <input type="text" name="tipo" id="tipo" placeholder="Informe o tipo do Pokemon" required>
-        </section>
-    
-        <section>
-          <label for="imagem">Imagem</label>
-          <input type="text" name="imagem" id="imagem" placeholder="Insira a url da imagem do Pokemon">
-        </section>
-    
-        <section>
-          <label for="descricao">Descrição</label>
-          <input type="text" name="descricao" id="descricao" placeholder="Informe a descricao">
-        </section>
-    
-        <section>
-          <label for="altura">Altura</label>
-          <input type="number" name="altura" id="altura" 
-            placeholder="Informe o nome do Pokemon">
-        </section>
-    
-        <section>
-          <label for="peso">Peso</label>
-          <input type="number" name="peso" id="peso" placeholder="Informe o peso">
-        </section>
-        
-        <section>
-          <label for="categoria">Categoria</label>
-          <input type="text" name="categoria" id="categoria" placeholder="Informe a categoria">
-        </section>
-    
-        <section>
-          <label for="habilidade">Habilidade</label>
-          <input type="text" name="habilidade" id="habilidade" placeholder="Informe a habilidade">
-        </section>
-    
-        <button type="submit">Cadastrar</button>
-      </form>
+      </section>
   
     </section>
-    </section>
-  
-</body>
+    
+  </body>
 
+  
 </html>
