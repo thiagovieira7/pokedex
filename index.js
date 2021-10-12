@@ -51,6 +51,8 @@ app.get("/", (req, res) => res.render("../view/index", {pokedex}));
 app.get("/detalhes", (req, res) => res.render("../view/detalhes", {pokedex}));
 app.get("/cadastro", (req, res) => res.render("../view/cadastro" ));
 
+app.post("/cadastro", (req, res) => {  res.send("Pokemon cadastrado com sucesso!");});
+
 
 
 
