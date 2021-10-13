@@ -87,7 +87,9 @@ app.post("/new", (req, res) => {
   res.redirect("/");
         
 });
-  
+function cadastro(){
+  alert('ok');
+}
   
   
     app.listen(port, () =>  

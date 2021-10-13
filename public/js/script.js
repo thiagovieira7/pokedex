@@ -1,5 +1,6 @@
-const closeMessage = document.querySelector("#fechar")
+const closeMessage = document.querySelector("#close")
 const message = document.querySelector("#mensagem")
-closeMessage.addEventListener("bc", function (){
+closeMessage.addEventListener("onclick", function (){
     message.style.display = "none"
 })
+
